@@ -302,9 +302,8 @@ export default function FilterSection({ setResFltrMenu, allFilterMappingdata, fi
                   </div>
 
                   <div className="diwenjriwejrjhwer d-flex align-items-center justify-content-between mt-3">
-                    <span>{currencySymbol}{minDisplay}</span>
-
-                    <span>{currencySymbol}{maxDisplay}</span>
+                    <span>{currencySymbol}{Number(minDisplay).toLocaleString("en-IN")}</span>
+                    <span>{currencySymbol}{Number(maxDisplay).toLocaleString("en-IN")}</span>
                   </div>
                 </div>
               </div>
@@ -851,9 +850,11 @@ export default function FilterSection({ setResFltrMenu, allFilterMappingdata, fi
                           </div>
 
                           <div className="diwenjriwejrjhwer d-flex align-items-center justify-content-between mt-3">
-                            <span>{currencySymbol}{minDisplay}</span>
+                            {/* <span>{currencySymbol}{minDisplay}</span> */}
+                            <span>{currencySymbol}{Number(minDisplay).toLocaleString("en-IN")}</span>
+                            <span>{currencySymbol}{Number(maxDisplay).toLocaleString("en-IN")}</span>
 
-                            <span>{currencySymbol}{maxDisplay}</span>
+                            {/* <span>{currencySymbol}{maxDisplay}</span> */}
                           </div>
                         </div>
                       </div>
