@@ -583,6 +583,27 @@
         padding: 1.2rem !important;
     }
 
+    .dagdfthdereer-res{
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(132, 13, 86, 0.35) 0px 5px 15px;
+        z-index: 9999999999;
+        width: 90%;
+    }
+
+    .dagdfthdereer-res-backd{
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1rem);
+        z-index: 9999999999;
+    }
+
+    .dewnrkhwerwe{
+        flex-direction: column;
+    }
+
     hr,
     .jlksdeflksdfk > div{
         width: 100% !important;

@@ -303,6 +303,10 @@
   padding-bottom: 0.6rem;
 }
 
+.podwejorjwierwer h5{
+  width: 7rem;
+}
+
 .form-select:focus{
   border-color: var(--pink-main-color) !important;
 }

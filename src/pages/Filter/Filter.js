@@ -807,19 +807,21 @@ export const Filter = () => {
                 </div>
 
                 <div className="col-lg-3">
-                  <div className="podwejorjwierwer">
+                  <div className="podwejorjwierwer d-none d-lg-flex d-md-flex align-items-center">
+                    <h5 className="mb-0">Sort By:</h5>
+
                     <select name="" className="form-select" id="" onChange={(e) => setSortBy(e.target.value)}>
-                      <option selected value="RECOMMENDED">Sort By: Recommended</option>
+                      <option selected value="RECOMMENDED">Recommended</option>
 
-                      <option value="NEW_ARRIVALS">Sort By: New Arrivals</option>
+                      <option value="NEW_ARRIVALS">New Arrivals</option>
 
-                      <option value="BEST_SELLER">Sort By: Best Seller</option>
+                      <option value="BEST_SELLER">Best Seller</option>
 
-                      <option value="LOW_TO_HIGH">Sort By: Price Low to High</option>
+                      <option value="LOW_TO_HIGH">Price Low to High</option>
 
-                      <option value="HIGH_TO_LOW">Sort By: Price High to Low</option>
+                      <option value="HIGH_TO_LOW">Price High to Low</option>
 
-                      <option value="DISCOUNT_HIGH_TO_LOW">Sort By: Discount High to Low</option>
+                      <option value="DISCOUNT_HIGH_TO_LOW">Discount High to Low</option>
                     </select>
                   </div>
                 </div>
@@ -1005,7 +1007,7 @@ export const Filter = () => {
                   )}
                 </div>
                 {products?.length > 0 && (
-                  <div className="dfgsfsfsfsdf d-flex justify-content-center align-items-center">
+                  <div className="dfgsfsfsfsdf mb-5 d-flex justify-content-center align-items-center">
 
                     <button
                       className="btn btn-main odjaejiuiewr-nav"

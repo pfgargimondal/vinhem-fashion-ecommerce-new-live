@@ -497,6 +497,43 @@ export const MeasurementForm = ({
     <div>
       {showSizeModal && (
         <div className="customize-modal-backdrop position-fixed w-100 h-100"></div>
+      )}      
+
+      {activeGuide && (
+        <div>
+          <div className="dagdfthdereer-res-backd d-block d-lg-none d-md-none position-fixed top-0 start-0 end-0 bottom-0"></div>
+      
+          <div className="dagdfthdereer-res start-50 top-50 translate-middle">
+            <div className="doienkwjrewewr p-5 pt-2">
+              <span
+                className="bck-form"
+                onClick={() => setActiveGuide(null)}
+              >
+                <i className="fa-solid me-1 fa-arrow-left-long"></i> Back To
+                The Form
+              </span>
+
+              <div className="dewnrkhwerwe">
+                <div className="text-center mb-3">
+                  <img
+                    src={
+                      productDetails?.data?.mesurament_form_data?.[
+                      `${feildNameGuide}_options_photo`
+                      ] || "/images/default-guide.jpg"
+                    }
+                    className="img-fluid"
+                    alt={activeGuide}
+                  />
+                </div>
+                <p className="mb-0">
+                  {productDetails?.data?.mesurament_form_data?.[
+                    `${feildNameGuide}_options_description`
+                  ] || "No description available."}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
 
       {showSizeModal && (
@@ -1436,7 +1473,7 @@ export const MeasurementForm = ({
             </div>
 
             {activeGuide && (
-              <div className="col-lg-6">
+              <div className="col-lg-6 d-none d-lg-block d-md-block">
                 <div className="doienkwjrewewr p-5 pt-2">
                   <span
                     className="bck-form"
