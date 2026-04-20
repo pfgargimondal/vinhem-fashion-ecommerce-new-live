@@ -614,20 +614,21 @@ export const Filter = () => {
                 style={{ borderRadius: "1rem" }}
               >
                 {filterdetails
-                  ? (
+                  && (
                     <img
                       src={`${allFilterData?.banner_image_url}/${filterdetails?.image}`}
                       className="img-fluid w-100"
                       alt=""
                     />
                   )
-                  : (
-                    <img
-                      src="images/fltrdbnnr.png"
-                      className="img-fluid w-100"
-                      alt=""
-                    />
-                  )}
+                  // : (
+                  //   <img
+                  //     src="images/fltrdbnnr.png"
+                  //     className="img-fluid w-100"
+                  //     alt=""
+                  //   />
+                  // )
+                  }
               </div>
             </div>
           )}
@@ -639,20 +640,21 @@ export const Filter = () => {
             style={{ borderRadius: "1rem" }}
           >
             {filterdetails
-              ? (
+              && (
                 <img
                   src={`${allFilterData?.banner_image_url}/${filterdetails?.image}`}
                   className="img-fluid w-100"
                   alt=""
                 />
               )
-              : (
-                <img
-                  src="../images/fltrdbnnr.png"
-                  className="img-fluid w-100"
-                  alt=""
-                />
-              )}
+              // : (
+              //   <img
+              //     src="../images/fltrdbnnr.png"
+              //     className="img-fluid w-100"
+              //     alt=""
+              //   />
+              // )
+              }
           </div>
         )}
 
